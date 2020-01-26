@@ -1,6 +1,6 @@
 {
     "name": "La Crosse",
-    "docs": "",
+    "docs": "https://github.com/psmith3/La-Crosse-Alerts-Poly",
     "type": "python3",
     "executable": "la_crosse-poly.py",
     "install": "install.sh",
@@ -17,8 +17,8 @@
             "author": "Parker Smith",
             "version": "1.0.0",
             "date": "Jan 26, 2020",
-            "source": "",
-            "license": ""
+            "source": "https://github.com/psmith3/La-Crosse-Alerts-Poly",
+            "license": "https://github.com/psmith3/La-Crosse-Alerts-Poly/blob/master/LICENSE"
         }
     ]
 }
