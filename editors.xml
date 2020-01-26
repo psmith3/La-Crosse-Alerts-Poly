@@ -1,0 +1,19 @@
+<editors>
+  <editor id="TEMP">
+    <range uom="4" min="-50" max="75" step="0.5" prec="1" />
+    <range uom="17" min="-50" max="150" step="0.5" prec="1" />
+  </editor>
+  <editor id="HUMIDITY">
+    <range uom="22" min="0" max="100" prec="0" />
+  </editor>
+  <editor id="RSSI">
+    <range uom="51" min="0" max="100" prec="0" />
+  </editor>
+  <editor id="MINUTES">
+    <range uom="45" min="0" max="1000000" />
+  </editor>
+    <!-- Boolean True or False-->
+    <editor id="bool">
+        <range uom="2" subset="0,1" />
+    </editor>
+</editors>
