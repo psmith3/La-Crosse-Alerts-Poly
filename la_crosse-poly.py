@@ -392,6 +392,7 @@ class device1node(polyinterface.Node):
             {'driver': 'GV1', 'value': 0, 'uom': 22}, #humidity
             {'driver': 'GV2', 'value': 0, 'uom': 51}, #linkquality
             {'driver': 'GV3', 'value': 0, 'uom': 2}, #lowbattery
+            {'driver': 'GV4', 'value': 0, 'uom': 2}, #online
             {'driver': 'GV5', 'value': 0, 'uom': 45}, #lastseen
             {'driver': 'GV6', 'value': 0, 'uom': 45} #interval
             ]
