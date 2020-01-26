@@ -20,6 +20,9 @@ UDI Polyglot V2 Integration of La Crosse Alerts from wireless temperature & humi
 
 <b>Low Battery Alerts</b>
 
+<img src="Gateway.png" alt="Gateway">
+<img src="Device0.png" alt="Gateway">
+<img src="Device1.png" alt="Gateway">
 
 Set alerts for any available attributes such as low battery, connection loss, and min / max alerts for temperature and humidity.
 No subscription required and data is pulled from API for Basic Lifetime subscription included with La Crosse devices
