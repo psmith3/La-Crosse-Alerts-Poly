@@ -28,7 +28,7 @@ ST-139D0-GV3-NAME = Low Battery
 ST-139D0-GV4-NAME = Sensor Online
 ST-139D0-GV5-NAME = Sensor Last Seen
 ST-139D0-GV6-NAME = Sensor Interval
-CMD-139D0-QUERY"-NAME = Query
+CMD-139D0-QUERY-NAME = Query
 
 ST-139D1-ST-NAME = Ambient Temperature
 ST-139D1-GV0-NAME = Probe Temperature
