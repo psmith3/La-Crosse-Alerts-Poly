@@ -1,5 +1,5 @@
-# MyNodeServer
-La Crosse Alerts Poly NodeServer for Polyglot v2 written in Python2/3
+# La Crosse Alerts Poly NodeServer for Polyglot v2
+Written in Python2/3
 by Parker Smith (psmith3) parker@parker3.com.
 
 UDI Polyglot V2 Integration of La Crosse Alerts from wireless temperature & humidity sensors and allows monitoring of
