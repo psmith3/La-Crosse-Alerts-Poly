@@ -1,116 +1,80 @@
 <nodeDefs>
-    <nodeDef id="controller" nodeType="139" nls="ctl">
-        <editors />
-        <sts>
+	<nodeDef id="controller" nodeType="139" nls="ctl">
+		<editors />
+		<sts>
 			<st id="ST" editor="bool" />
-      <st id="GV0" editor="bool" />
-      <st id="GV1" editor="MINUTES" />
+			<st id="GV0" editor="bool" />
+			<st id="GV1" editor="NUMBER" />
 		</sts>
-        <cmds>
-            <sends>
-              <cmd id="DON" />
-              <cmd id="DOF" />
-            </sends>
-            <accepts>
-              <cmd id="QUERY" />
-              <cmd id="DISCOVER" />
-
-            </accepts>
-        </cmds>
-    </nodeDef>
-    <nodeDef id="device0node" nodeType="139" nls="139D0">
-        <editors />
-        <sts>
-          <st id="ST" editor="TEMP" />
-          <st id="GV0" editor="TEMP" />
-          <st id="GV1" editor="HUMIDITY" />
-          <st id="GV2" editor="RSSI" />
-          <st id="GV3" editor="bool" />
-          <st id="GV4" editor="bool" />
-          <st id="GV5" editor="MINUTES" />
-          <st id="GV6" editor="MINUTES" />
-        </sts>
-        <cmds>
-            <sends />
-            <accepts>
-              <cmd id="QUERY" />
-            </accepts>
-        </cmds>
-    </nodeDef>
-    <nodeDef id="device1node" nodeType="139" nls="139D1">
-        <editors />
-        <sts>
-          <st id="ST" editor="TEMP" />
-          <st id="GV0" editor="TEMP" />
-          <st id="GV1" editor="HUMIDITY" />
-          <st id="GV2" editor="RSSI" />
-          <st id="GV3" editor="bool" />
-          <st id="GV4" editor="bool" />
-          <st id="GV5" editor="MINUTES" />
-          <st id="GV6" editor="MINUTES" />
-        </sts>
-        <cmds>
-            <sends />
-            <accepts>
-              <cmd id="QUERY" />
-            </accepts>
-        </cmds>
-    </nodeDef>
-    <nodeDef id="device2node" nodeType="139" nls="139D2">
-        <editors />
-        <sts>
-          <st id="ST" editor="TEMP" />
-          <st id="GV0" editor="TEMP" />
-          <st id="GV1" editor="HUMIDITY" />
-          <st id="GV2" editor="RSSI" />
-          <st id="GV3" editor="bool" />
-          <st id="GV4" editor="bool" />
-          <st id="GV5" editor="MINUTES" />
-          <st id="GV6" editor="MINUTES" />
-        </sts>
-        <cmds>
-            <sends />
-            <accepts>
-              <cmd id="QUERY" />
-            </accepts>
-        </cmds>
-    </nodeDef>
-    <nodeDef id="device3node" nodeType="139" nls="139D3">
-        <editors />
-        <sts>
-          <st id="ST" editor="TEMP" />
-          <st id="GV0" editor="TEMP" />
-          <st id="GV1" editor="HUMIDITY" />
-          <st id="GV2" editor="RSSI" />
-          <st id="GV3" editor="bool" />
-          <st id="GV4" editor="bool" />
-          <st id="GV5" editor="MINUTES" />
-          <st id="GV6" editor="MINUTES" />
-        </sts>
-        <cmds>
-            <sends />
-            <accepts>
-              <cmd id="QUERY" />
-            </accepts>
-        </cmds>
-    </nodeDef>
-    <nodeDef id="device4node" nodeType="139" nls="139D4">
-        <editors />
-        <sts>
-          <st id="ST" editor="TEMP" />
-          <st id="GV0" editor="TEMP" />
-          <st id="GV1" editor="HUMIDITY" />
-          <st id="GV2" editor="RSSI" />
-          <st id="GV3" editor="bool" />
-          <st id="GV4" editor="bool" />
-          <st id="GV5" editor="MINUTES" />
-          <st id="GV6" editor="MINUTES" />
-        </sts>
-        <cmds>
-            <sends />
-            <accepts>
-              <cmd id="QUERY" />
-            </accepts>
-        </cmds>
-    </nodeDef>
+		<cmds>
+			<sends>
+				<cmd id="DON" />
+				<cmd id="DOF" />
+			</sends>
+			<accepts>
+				<cmd id="QUERY" />
+				<cmd id="DISCOVER" />
+			</accepts>
+		</cmds>
+	</nodeDef>
+	<nodeDef id="device_tempnode" nodeType="139" nls="139T">
+		<editors />
+		<sts>
+			<st id="ST" editor="TEMP" />
+			<st id="CLIHUM" editor="HUMIDITY" />
+			<st id="BATLVL" editor="BATLVL" />
+			<st id="GV4" editor="bool" />
+			<st id="GV3" editor="bool" />
+			<st id="GV0" editor="NUMBER" />
+			<st id="GV5" editor="MINUTES" />
+			<st id="GV1" editor="MINUTES" />
+			<st id="GV2" editor="RSSI" />
+			<st id="GV6" editor="MINUTES" />
+		</sts>
+		<cmds>
+			<sends />
+			<accepts>
+				<cmd id="INTERVAL">
+					<p id="" editor="INTCHOICE" init="GV7"/>
+				</cmd	>
+				<cmd id="QUERY" />
+			</accepts>
+		</cmds>
+	</nodeDef>
+	<nodeDef id="device_probetempnode" nodeType="139" nls="139P">
+		<editors />
+		<sts>
+			<st id="ST" editor="TEMP" />
+		</sts>
+		<cmds>
+			<sends />
+			<accepts>
+				<cmd id="QUERY" />
+			</accepts>
+		</cmds>
+	</nodeDef>
+	<nodeDef id="device_humiditynode" nodeType="139" nls="139H">
+		<editors />
+		<sts>
+			<st id="ST" editor="HUMIDITY" />
+		</sts>
+		<cmds>
+			<sends />
+			<accepts>
+				<cmd id="QUERY" />
+			</accepts>
+		</cmds>
+	</nodeDef>
+	<nodeDef id="device_wetnode" nodeType="139" nls="139W">
+		<editors />
+		<sts>
+			<st id="ST" editor="bool" />
+		</sts>
+		<cmds>
+			<sends />
+			<accepts>
+				<cmd id="QUERY" />
+			</accepts>
+		</cmds>
+	</nodeDef>
 </nodeDefs>
